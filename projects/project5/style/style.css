@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 1em;
+}
+
+
+/***** Navbar CSS******************/
+
+.navbar {
+    width: 100%;
+    margin-top: 1px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
+
+.nav_cnt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.logo_name .name-nav {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link {
+    text-align: center;
+}
+
+.navbar .nav-link.active {
+    color: #1AE0EC;
+}
+
+@media screen and (max-width:500px),
+(max-height:600px) {
+    .nav_cnt {
+        width: 100%;
+    }
+
+    .logo_name .name-nav {
+        display: none;
+    }
+}
+
+/***** Div1 CSS******************/
+
+.head {
+    background: #1AE0EC;
+    height: 1px;
+}
+
+/**********************************************************************/
+.oppening {
+    margin-top: 2em;
+    background: #13E8F163 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 40vmin;
+}
+
+.oppening .item,
+.pre-projects .item,
+.about .item {
+    padding: 1em;
+    text-align: center;
+    width: 90vmin;
+}
+
+
+.item h1 {
+    font-size: 6.2vmin;
+    font-weight: 500;
+}
+
+.item p {
+    font-size: 2vmin;
+}
+
+/**********************************************************************/
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+}
+
+/**********************************************************************/
+
+.pre-projects {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+
+.projects {
+    margin-top: 0;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14pt;
+    padding-bottom: 10vh;
+}
+
+a.btn {
+    font-size: 0.7em;
+    width: fit-content;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin-right: 1em;
+}
+
+.projects img {
+    margin: 3em;
+    height: 30em;
+    width: 65%;
+    box-shadow: 2px 2px 30px #ccc;
+}
+
+/**********************************************************************/
+
+.footer {
+    background-color: black;
+    color: #1AE0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+
+.footer .name {
+    justify-content: flex-start;
+}
+
+.footer .cc {
+    justify-content: flex-end;
+}
+
+.line {
+    background-color: #1AE0EC;
+    height: 0.3em;
+}
+
+/**************************************************************/
+
+.cfull {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+
+.cnt1 {
+    width: 45vw;
+    height: 100vh;
+}
+
+.cnt2 {
+    width: 55vw;
+    height: 100vh;
+}
+
+.cnt1 .line {
+    position: fixed;
+    width: 25vw;
+    height: 1vh;
+    background-color: #FDBD03;
+}
+
+.cnt1 img {
+    margin-top: 10vh;
+    height: 60vh;
+    width: 50%;
+    margin-right: 15vw;
+}
+
+.cnt2 .line {
+    position: fixed;
+    width: 55vw;
+    bottom: 0;
+    height: 1vh;
+    background-color: #FDBD03;
+}
+
+.cnt2 .pre-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 2em;
+    margin-top: 18vh;
+}
+
+.cnt2 h1 {
+    color: #FDBD03;
+    font-family: "Heebo", sans-serif;
+}
+
+.cnt2 p {
+    width: 15vw;
+    font-size: 0.7em;
+    margin-top: 2em;
+    margin-bottom: 2vh;
+    color: #020253;
+    font-family: "Heebo", sans-serif;
+}
+
+.cnt2 form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cnt2 label {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #2C2C2C;
+    align-self: flex-start;
+}
+
+.cnt2 form .d1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.d2 {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-bottom: 2vh;
+}
+
+.d2 input {
+
+    height: 4vh;
+}
+
+.d3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.d3 input {
+    height: 15vh;
+}
+
+.cnt2 input {
+    margin-top: 0.5vh;
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: 2px solid #FDBD03;
+}
+
+#s-btn {
+    color: #000000;
+    background-color: #FDBD03;
+    width: 6vw;
+    height: 3.5vh;
+}
+
+button {
+    border: 0;
+    height: 4em;
+    width: 4em;
+    margin-left: 1vw;
+    border-radius: 100%;
+    background-color: #FDBD03;
+}
+
+button.top {
+    position: fixed;
+    left: 3vw;
+    top: 5vh;
+}
+
+.buttons {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    bottom: 5vh;
+    left: 3vw;
+}
+
+.buttons button {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+button img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+@media screen and (max-height: 500px),
+(max-width: 500px) {
+    .cfull {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+    }
+
+    .cnt1 {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .cnt1 .line {
+        position: relative;
+        width: 86vw;
+        height: 2vh;
+    }
+
+    .cnt1 .im {
+        padding-top: 10vh;
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+    }
+
+    .im img {
+        width: 23vw;
+        height: 32vh;
+        margin: auto;
+    }
+
+    .cnt2 {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .cnt2 .line {
+        position: relative;
+        width: 100vw;
+        bottom: 0;
+        height: 2vh;
+        background-color: #FDBD03;
+    }
+
+    .cnt2 .pre-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+        margin-right: 0;
+
+    }
+
+    .cnt2 h1 {
+        font-size: 4em;
+        margin-top: 10vh;
+        color: #FDBD03;
+        font-family: "Heebo", sans-serif;
+    }
+
+    .cnt2 p {
+        width: 80vw;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 12vh;
+        color: #020253;
+        font-family: "Heebo", sans-serif;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .cnt2 form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cnt2 label {
+        font-family: "Heebo", sans-serif;
+        font-weight: bold;
+        color: #2C2C2C;
+        align-self: flex-start;
+    }
+
+    .cnt2 form .d1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+    }
+
+    .d2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .d2 input {
+
+        height: 8vh;
+    }
+
+    .d3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .d3 input {
+        height: 25vh;
+    }
+
+    .cnt2 input {
+        margin-top: 0.5vh;
+        background-color: #E5EEFF;
+        border: 0;
+        border-bottom: 2px solid #FDBD03;
+    }
+
+    #s-btn {
+        color: #000000;
+        background-color: #FDBD03;
+        width: 100%;
+        height: 8vh;
+        margin-bottom: 40vh;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    button {
+        border: 0;
+        height: 5em;
+        width: 5em;
+        border-radius: 100%;
+        background-color: #FDBD03;
+        margin-left: 0;
+    }
+
+    .buttons {
+        margin: 2em;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        bottom: 0;
+    }
+
+    .buttons button {
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    button img {
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    button.top {
+        display: none;
+    }
+
+
+}

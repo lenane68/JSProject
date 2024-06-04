@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 1em;
+}
+
+
+/***** Navbar CSS******************/
+
+.navbar {
+    width: 100%;
+    margin-top: 1px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
+
+.nav_cnt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.logo_name .name-nav {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link {
+    text-align: center;
+}
+
+.navbar .nav-link.active {
+    color: #1AE0EC;
+}
+
+@media screen and (max-width:500px),
+(max-height:600px) {
+    .nav_cnt {
+        width: 100%;
+    }
+
+    .logo_name .name-nav {
+        display: none;
+    }
+}
+
+/***** Div1 CSS******************/
+
+.head {
+    background: #1AE0EC;
+    height: 1px;
+}
+
+/**********************************************************************/
+.oppening {
+    margin-top: 2em;
+    background: #13E8F163 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 40vmin;
+}
+
+.oppening .item,
+.pre-projects .item,
+.about .item {
+    padding: 1em;
+    text-align: center;
+    width: 90vmin;
+}
+
+
+.item h1 {
+    font-size: 6.2vmin;
+    font-weight: 500;
+}
+
+.item p {
+    font-size: 2vmin;
+}
+
+/**********************************************************************/
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+}
+
+/**********************************************************************/
+
+.pre-projects {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+
+.projects {
+    margin-top: 0;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14pt;
+    padding-bottom: 10vh;
+}
+
+a.btn {
+    font-size: 0.7em;
+    width: fit-content;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin-right: 1em;
+}
+
+.projects img {
+    margin: 3em;
+    height: 30em;
+    width: 65%;
+    box-shadow: 2px 2px 30px #ccc;
+}
+
+/**********************************************************************/
+
+.footer {
+    background-color: black;
+    color: #1AE0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+
+.footer .name {
+    justify-content: flex-start;
+}
+
+.footer .cc {
+    justify-content: flex-end;
+}
+
+.line {
+    background-color: #1AE0EC;
+    height: 0.3em;
+}
+
+/**************************************************************/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.upper {
+    top: 0;
+    height: 55%;
+    width: 100%;
+}
+
+.upper img {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    direction: rtl;
+    position: absolute;
+    right: 16vw;
+    top: 16vh;
+    width: 25em;
+    height: 28em;
+    background-color: #1A1A1AD4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 3em;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+form .item {
+    justify-content: center;
+    padding: 0.5em;
+}
+
+form .item1 {
+    padding: 0.5em;
+    align-self: flex-start;
+}
+
+form p {
+    font-size: 11pt;
+}
+
+form input {
+    border: 1px solid #D31C75;
+    width: 100%;
+}
+
+form .sub-but {
+    margin-top: 2em;
+    width: 30%;
+    align-self: flex-start;
+    background-color: #D31C75;
+    color: white;
+    margin-bottom: 4em;
+}
+
+
+@media screen and (max-height: 500px),
+(max-width: 500px) {
+
+
+
+
+
+    .upper {
+        top: 0;
+        height: 32%;
+        width: 100%;
+        background-image: url(../images/purblebgc.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    form {
+        align-self: center;
+        direction: rtl;
+        position: absolute;
+        right: auto;
+        top: 12vh;
+        height: fit-content;
+        width: 90%;
+        background-color: #1A1A1AD4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        padding: 2em;
+        font-family: "Heebo", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+
+    form .item {
+
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    form .item1 {
+        padding: 0.5em;
+        align-self: flex-start;
+    }
+
+    form p {
+        font-size: 11pt;
+    }
+
+    form input {
+        border: 1px solid #D31C75;
+        width: 100%;
+    }
+
+    form .sub-but {
+        margin-top: 2em;
+        width: 30%;
+        align-self: flex-start;
+        background-color: #D31C75;
+        color: white;
+        margin-bottom: 4em;
+    }
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 1em;
+}
+
+
+/***** Navbar CSS******************/
+
+.navbar {
+    width: 100%;
+    margin-top: 1px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
+
+.nav_cnt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.logo_name .name-nav {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link {
+    text-align: center;
+}
+
+.navbar .nav-link.active {
+    color: #1AE0EC;
+}
+
+@media screen and (max-width:500px),
+(max-height:600px) {
+    .nav_cnt {
+        width: 100%;
+    }
+
+    .logo_name .name-nav {
+        display: none;
+    }
+}
+
+/***** Div1 CSS******************/
+
+.head {
+    background: #1AE0EC;
+    height: 1px;
+}
+
+/**********************************************************************/
+.oppening {
+    margin-top: 2em;
+    background: #13E8F163 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 40vmin;
+}
+
+.oppening .item,
+.pre-projects .item,
+.about .item {
+    padding: 1em;
+    text-align: center;
+    width: 90vmin;
+}
+
+
+.item h1 {
+    font-size: 6.2vmin;
+    font-weight: 500;
+}
+
+.item p {
+    font-size: 2vmin;
+}
+
+/**********************************************************************/
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+}
+
+/**********************************************************************/
+
+.pre-projects {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+
+.projects {
+    margin-top: 0;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14pt;
+    padding-bottom: 10vh;
+}
+
+a.btn {
+    font-size: 0.7em;
+    width: fit-content;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin-right: 1em;
+}
+
+.projects img {
+    margin: 3em;
+    height: 30em;
+    width: 65%;
+    box-shadow: 2px 2px 30px #ccc;
+}
+
+/**********************************************************************/
+
+.footer {
+    background-color: black;
+    color: #1AE0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+
+.footer .name {
+    justify-content: flex-start;
+}
+
+.footer .cc {
+    justify-content: flex-end;
+}
+
+.line {
+    background-color: #1AE0EC;
+    height: 0.3em;
+}
+
+/**************************************************************/
+
+.top {
+    top: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    color: white;
+    background-image: url(../images/bgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content1 {
+    margin: auto;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+    font-family: "Assistant", sans-serif;
+}
+
+.content1 h1 {
+    font-family: "Assistant", sans-serif;
+    font-weight: bold;
+    color: #D3E10E;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+}
+
+.content1 p {
+    color: #F9F9F9;
+    font-size: 0.7em;
+}
+
+.bottom {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.content2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    direction: rtl;
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: "Assistant", sans-serif;
+    font-weight: bold;
+}
+
+form div {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    color: #011560;
+    font-size: 0.7em;
+    align-self: flex-start;
+    margin: 0.1em;
+}
+
+form div input {
+    background-color: #F6F6F6;
+    border: none;
+    color: #011560;
+    border-bottom: 1.5px solid #D3E10E;
+    height: 2em;
+    width: 23vw;
+}
+
+#s-btn {
+    background-color: #D3E10E;
+    border: none;
+    height: 2em;
+    width: 8em;
+    margin-top: 1em;
+    font-style: normal;
+}
+
+@media screen and (max-height: 500px),
+(max-width: 500px) {
+
+    .top h1 {
+        font-size: larger;
+    }
+
+    .content1,
+    .content2 {
+        width: 95vw
+    }
+
+    form {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #s-btn {
+        width: 100%;
+    }
+
+    form div {
+        width: 100%;
+    }
+
+    form div input {
+        width: 100%;
+    }
+}

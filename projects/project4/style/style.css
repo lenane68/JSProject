@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 1em;
+}
+
+
+/***** Navbar CSS******************/
+
+.navbar {
+    width: 100%;
+    margin-top: 1px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+}
+
+.nav_cnt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.logo_name .name-nav {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link {
+    text-align: center;
+}
+
+.navbar .nav-link.active {
+    color: #1AE0EC;
+}
+
+@media screen and (max-width:500px),
+(max-height:600px) {
+    .nav_cnt {
+        width: 100%;
+    }
+
+    .logo_name .name-nav {
+        display: none;
+    }
+}
+
+/***** Div1 CSS******************/
+
+.head {
+    background: #1AE0EC;
+    height: 1px;
+}
+
+/**********************************************************************/
+.oppening {
+    margin-top: 2em;
+    background: #13E8F163 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 40vmin;
+}
+
+.oppening .item,
+.pre-projects .item,
+.about .item {
+    padding: 1em;
+    text-align: center;
+    width: 90vmin;
+}
+
+
+.item h1 {
+    font-size: 6.2vmin;
+    font-weight: 500;
+}
+
+.item p {
+    font-size: 2vmin;
+}
+
+/**********************************************************************/
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+}
+
+/**********************************************************************/
+
+.pre-projects {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+
+.projects {
+    margin-top: 0;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14pt;
+    padding-bottom: 10vh;
+}
+
+a.btn {
+    font-size: 0.7em;
+    width: fit-content;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin-right: 1em;
+}
+
+.projects img {
+    margin: 3em;
+    height: 30em;
+    width: 65%;
+    box-shadow: 2px 2px 30px #ccc;
+}
+
+/**********************************************************************/
+
+.footer {
+    background-color: black;
+    color: #1AE0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+
+.footer .name {
+    justify-content: flex-start;
+}
+
+.footer .cc {
+    justify-content: flex-end;
+}
+
+.line {
+    background-color: #1AE0EC;
+    height: 0.3em;
+}
+
+/**************************************************************/
+
+.bd {
+    background: #E5EEFF;
+}
+
+.cnt1 {
+    width: 80vw;
+    margin: 10em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 14em);
+    gap: 1em;
+    grid-template-areas: "img1 img2 intro intro"
+        "img3 img4 intro intro"
+        "img5 img6 img7 img8"
+        "tell tell img9 img10"
+        "tell tell img11 img12"
+        "tell tell img13 img14";
+}
+
+.cnt1 .item {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    background-color: #020253;
+    grid-area: intro;
+
+}
+
+.intro div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    color: #0EE1DA;
+    font-family: "Assistant", sans-serif;
+    font-weight: bold;
+}
+
+.intro div p {
+    font-size: 0.6em;
+    font-weight: 0;
+    font-family: "Assistant", sans-serif;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.tell {
+    background-color: #8E097C;
+    grid-area: tell;
+    text-align: center;
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tell h1 {
+    padding: 0.5em;
+    color: white;
+    font-family: "Assistant", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.tell p {
+    padding: 0.5em;
+    margin-bottom: 4em;
+
+}
+
+.tell form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tell form input {
+    margin-bottom: 1em;
+    align-self: center;
+    background-color: #E5EEFF;
+    width: 80%;
+    height: 3.5em;
+    border: 0;
+    border-bottom: 3px solid #0EE1DA;
+}
+
+.tell form label {
+    font-size: 0.5em;
+    margin-right: 5em;
+    align-self: flex-end;
+    font-family: "Heebo", sans-serif;
+    color: #0EE1DA;
+    font-weight: bold;
+}
+
+.tell #tell {
+    height: 10em;
+}
+
+#s-btn {
+    font-size: 0.7em;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    color: #011560;
+    background-color: #0EE1DA;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.img14 {
+    grid-area: img14;
+}
+
+@media screen and (max-height: 500px),
+(max-width: 500px) {
+
+    .cnt1 {
+        top: 0;
+        margin-top: 0;
+
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 12em);
+        gap: 0.7em;
+        grid-template-areas: "intro intro"
+            "intro intro"
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "tell tell"
+            "tell tell"
+            "tell tell"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14";
+    }
+
+    .img1,
+    .img3,
+    .img5,
+    .img7,
+    .img9,
+    .img11,
+    .img13,
+    .tell {
+        margin-left: 1em;
+    }
+
+    .img2,
+    .img4,
+    .img6,
+    .img8,
+    .img10,
+    .img12,
+    .img14,
+    .tell {
+        margin-right: 1em;
+    }
+
+    .intro div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro h1 {
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+        color: #0EE1DA;
+        font-family: "Assistant", sans-serif;
+        font-weight: bold;
+    }
+
+    .intro div p {
+        font-size: 0.6em;
+        font-weight: 0;
+        font-family: "Assistant", sans-serif;
+        text-align: center;
+        color: #F9F9F9;
+    }
+
+}
