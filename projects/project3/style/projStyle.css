@@ -1,0 +1,176 @@
+body {
+    background-color: rgb(11, 114, 20);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    /* Center the board horizontally */
+    align-items: center;
+    /* Align columns to the top */
+    padding: 20px;
+}
+
+.columns-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 130px;
+    min-height: 60px;
+    border: 1px solid #ccc;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    background-color: red;
+    /* Card background color */
+    width: 100px;
+    /* Card width */
+    height: 50px;
+    /* Card height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.face-up {
+    background-color: white;
+    /* Background color for face-up cards */
+}
+
+.face-up.♥,
+.face-up.♦ {
+    color: red;
+}
+
+.card-pile {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: red;
+    /* Card background color */
+    width: 100px;
+    /* Card width */
+    height: 50px;
+    /* Card height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.flipCard {
+    position: absolute;
+    left: 11vw;
+}
+
+.soliPile {
+    background-color: chartreuse;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #F7DCB9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+button {
+    height: 5vh;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: chartreuse;
+    background-color: rgb(237, 107, 107);
+
+}
+
+button a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+    .game-container {
+        flex-direction: column-reverse;
+    }
+
+    .flipCard {
+        left: 1vh;
+    }
+
+    .pile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .card {
+        width: 7vw;
+        height: 5vh;
+        padding: 1vh;
+        margin: 1vw;
+        font-size: 1em;
+    }
+
+    .flip-pile .columns-container {
+        top: 6vh;
+        left: 0.5vw;
+        position: relative;
+
+    }
+
+    .flip-pile .columns-container div {
+        border: 2px solid black;
+    }
+
+    .pile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

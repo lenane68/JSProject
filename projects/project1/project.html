@@ -4,26 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Project 1</title>
+    <link rel="stylesheet" href="style/proj-style.css">
+    <script src="script/script.js" defer></script>
+    <title>Page Builder</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-fluid upper"><img src="images/purblebgc.png" alt=""></div>
-        <form action="">
+    <div id="frame">
+        <div id="panelSide">
+            <h1>Page Builder</h1>
 
-            <h2 class="item">תן לנו להוביל אותך קדימה</h2>
-            <p class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <nav>
+                <a class="active" onclick="pageToShow('settings', this)">עיצוב כללי</a>
+                <a onclick="pageToShow('elements', this)">אלמנטים</a>
+            </nav>
 
-            <label for="full_name" class="item1">שם מלא</label>
-            <input type="text" id="full_name" class="item">
-            <label for="email" class="item1">דוא״ל</label>
-            <input type="email" id="email" class="item">
+            <div id="settings" class="show">
+                <div class="field">
+                    <label>רקע לאתר</label>
+                    <input type="color" oninput="bgChange(this)">
+                </div>
 
-            <input type="submit" class="item1 sub-but" value="שליחה">
-        </form>
+                <div class="field">
+                    <label>ריווח פנימי של הדף</label>
+                    <input type="number" value="16" oninput="paddingChange(this)">
+                </div>
+            </div>
+
+            <div id="elements">
+                <div class="field">
+                    <label>סוג אלמנט</label>
+                    <select oninput="typeSelect(this)">
+                        <option></option>
+                        <option value="title">כותרת</option>
+                        <option value="p">פסקה</option>
+                        <option value="input">תיבת קלט</option>
+                        <option value="button">לחצן</option>
+                        <option value="div">div</option>
+                    </select>
+                </div>
+
+                <div id="params">
+                    <div id="headerType" class="field">
+                        <label>סוג כותרת</label>
+                        <select>
+                            <option>h1</option>
+                            <option>h2</option>
+                            <option>h3</option>
+                            <option>h4</option>
+                            <option>h5</option>
+                            <option>h6</option>
+                        </select>
+                    </div>
+
+                    <div id="justText" class="field">
+                        <label>מיקום הטקסט</label>
+                        <select>
+                            <option>center</option>
+                            <option>left</option>
+                            <option>right</option>
+                            <option>justify</option>
+                        </select>
+                    </div>
+
+                    <div id="inputType" class="field">
+                        <label>סוג קלט</label>
+                        <select>
+                            <option value="text">טקסט</option>
+                            <option value="number">מספר</option>
+                            <option value="date">תאריך</option>
+                            <option value="time">שעה</option>
+                        </select>
+                    </div>
+
+                    <div id="fontSize" class="field">
+                        <label>גודל הטקסט</label>
+                        <input type="number">
+                    </div>
+
+                    <div id="height" class="field">
+                        <label>אורך</label>
+                        <input type="number">
+                    </div>
+
+                    <div id="width" class="field">
+                        <label>רוחב</label>
+                        <input type="number">
+                    </div>
+
+                    <div id="color" class="field">
+                        <label>צבע טקסט</label>
+                        <input type="color">
+                    </div>
+
+                    <div id="bgColor" class="field">
+                        <label>צבע רקע</label>
+                        <input type="color">
+                    </div>
+
+                    <div id="content" class="field">
+                        <label>תוכן</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <button onclick="add()">הוסף</button>
+            </div>
+            <button id="exit">
+                <a href="index.html">Exit</a>
+            </button>
+        </div>
+
+        <div id="main">
+            <div id="page" contenteditable="true"></div>
+        </div>
     </div>
 </body>
 

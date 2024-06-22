@@ -4,39 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Project 2</title>
+    <link rel="stylesheet" href="style/proj-style.css">
+    <script src="script/script.js" defer></script>
+    <title>XO</title>
 </head>
 
 <body>
-    <div class="container-fluid full-page">
-        <div class="content">
-            <div>
-                <h1>Here & Now</h1>
-            </div>
-            <div>
-                <h3>רצינו להזמין אתכם להנות משלל מתנות</h3>
-            </div>
-            <div>
-                <p>
-                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק
-                    ליץ, ושבעגט ליבם
-                    סולגק.
-                </p>
-            </div>
-            <form>
-                <div>
-                    <label for="name" class="labels">שם</label>
-                    <input type="text" id="name">
-                </div>
-                <div><label for="email" class="labels">דוא״ל</label>
-                    <input type="text" id="email">
-                </div>
-                <div>
-                    <input type="submit" id="s-btn" value="עדכנו אותי">
-                </div>
-            </form>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button class="btn" onclick="closeModal()">Close</button>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="board"></div>
+        <button id="resetGame" onclick="resetGame()">
+            Reset Game
+        </button>
+
+        <button id="exitGame">
+            <a href="index.html">Exit Game</a>
+        </button>
     </div>
 </body>
 

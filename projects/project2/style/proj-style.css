@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #B5C18E;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #F7DCB9;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 36px;
+    background-color: #DEAC80;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0800ff;
+}
+
+.winning-cell {
+    background-color: #f6ca2c;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #0800ff;
+    font-size: 25px;
+    color: #f6ca2c;
+}
+
+button a {
+    text-decoration: none;
+    color: #f6ca2c;
+}
+
+Button:hover {
+    background-color: #090575;
+}
+
+#resetGame {
+    margin-top: 150px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #F7DCB9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+        gap: 1px;
+        background-color: #F7DCB9;
+    }
+
+    button {
+        height: 50px;
+        width: 120px;
+        font-size: 1em;
+    }
+
+    #resetGame {
+        margin-top: 60px;
+    }
+
+    .modal-content {
+        font-size: 1em;
+    }
+}

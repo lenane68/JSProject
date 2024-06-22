@@ -1,0 +1,34 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    background-color: bisque;
+}
+
+.img {
+    height: 40%;
+}
+
+.open {
+    color: black;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+button {
+    height: 5vh;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(223, 184, 107);
+
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

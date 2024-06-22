@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Project 3</title>
+    <link rel="stylesheet" href="style/projStyle.css">
+    <script src="script/script.js" defer></script>
+    <title>Solitaire</title>
 </head>
 
 <body>
-    <div class="container-fluid top">
-        <div class="content1">
-            <h1>תן לנו להוביל אותך קדימה</h1>
-            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצ
-                סולגק.</p>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button class="btn" onclick="closeModal()">Close</button>
         </div>
     </div>
-    <div class="container-fluid bottom">
-        <div class="content2">
-            <form>
-                <div>
-                    <label for="name" class="labels">שם מלא</label>
-                    <input type="text" id="name">
-                </div>
-                <div><label for="email" class="labels">דוא״ל</label>
-                    <input type="text" id="email">
-                </div>
-                <input type="submit" id="s-btn" value="שליחה">
-            </form>
+    <div class="game-container">
+        <div id="pile" class="pile"></div>
+        <div id="flipPile" class="flip-pile"></div>
+        <div id="board">
         </div>
+    </div>
+    <div class="buttons">
+        <button id="exitGame">
+            <a href="index.html">Exit Game</a>
+        </button>
+        <button id="resetGame" onclick="resetGame()">
+            Reset Game
+        </button>
     </div>
 </body>
 
